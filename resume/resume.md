@@ -9,7 +9,8 @@ date: 2020-06-01
 ## Contact {.heading .hide}
 
 Milwaukee, WI\
-clayton@claytondavis.dev
+clayton@claytondavis.dev\
+https://resume.claytondavis.dev\
 
 ## Experience {.divider}
 
@@ -53,7 +54,9 @@ clayton@claytondavis.dev
 
 ## Education {.divider}
 
-- B.Sc Computer and Information Technology (Network Engineering) &mdash; Purdue University
+### B.Sc Computer and Information Technology - Network Engineering 
+
+#### Purdue University
 
 ## Technical skills {.divider}
 

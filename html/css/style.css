@@ -234,6 +234,10 @@ button:focus,
   }
 }
 
+.img-responsive {
+  width: 80%;
+}
+
 /*---------------------------
 * Section Title
 *---------------------------*/
@@ -332,7 +336,7 @@ button:focus,
 
 .social-icon li a {
   display: block;
-  font-size: 12px;
+  font-size: 22px;
   color: #333333;
   width: 34px;
   height: 34px;
