@@ -13,6 +13,11 @@ phases:
       - pip install --user aws-sam-cli
       - USER_BASE_PATH=$(python -m site --user-base)
       - export PATH=$PATH:$USER_BASE_PATH/bin
+      ## pandoc
+      - wget https://github.com/jgm/pandoc/releases/download/2.14.0.1/pandoc-2.14.0.1-linux-amd64.tar.gz
+      - tar -xvf pandoc-2.14.0.1-linux-amd64.tar.gz
+      ## pantomjs
+      - npm install phantomjs
   pre_build:
     commands:
       - chmod +x create-or-update-stack.sh
@@ -20,18 +25,10 @@ phases:
   build:
     commands:
       - BUCKET=$(aws cloudformation describe-stacks --stack-name $STACK_NAME --region us-east-1 --query "Stacks[].Outputs[?OutputKey=='Bucket'].OutputValue" --output text)
-      # - sam package --template-file serverless.template.yml --s3-bucket $BUCKET --s3-prefix sam/ --output-template-file packaged-template.yml
-      # - sam deploy --template-file packaged-template.yml --stack-name Brewery-API-and-CRON --region us-east-1 --capabilities CAPABILITY_IAM
-      # - API_KEY=$(aws ssm get-parameter --name /brewery-app/api-key --with-decryption --query "Parameter.Value" --output text)
-      # - SHEET_ID=$(aws ssm get-parameter --name /brewery-app/sheet-id --with-decryption --query "Parameter.Value" --output text)
-      # - touch html/local_api_keys.js
-      # - echo "var API_KEY = \"${API_KEY}\"" >> html/local_api_keys.js
-      # - echo "var SHEET_ID = \"${SHEET_ID}\"" >> html/local_api_keys.js
-      - npm install phantomjs
+      - pandoc --section-divs -s resume/resume.md -H resume/header.html -c resume/resume.css -o resume/resume.html
       - mkdir html/pdf
       - node_modules/.bin/phantomjs bin/rasterize.js resume/resume.html html/pdf/resume.pdf 0.7
       - aws s3 sync html/ s3://${BUCKET}/
-
   post_build:
     commands:
       ##########
