@@ -29,9 +29,7 @@ phases:
       # - echo "var SHEET_ID = \"${SHEET_ID}\"" >> html/local_api_keys.js
       - npm install phantomjs
       - mkdir html/pdf
-      - ls bin
-      - ls node_modules/.bin/
-      - bin/phantomjs bin/rasterize.js ${HTML_DIR}/resume.html html/pdf/resume.pdf 0.7
+      - node_modules/.bin/phantomjs bin/rasterize.js ${HTML_DIR}/resume.html html/pdf/resume.pdf 0.7
       - aws s3 sync html/ s3://${BUCKET}/
 
   post_build:
