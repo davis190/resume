@@ -25,15 +25,15 @@ phases:
   build:
     commands:
       - BUCKET=$(aws cloudformation describe-stacks --stack-name $STACK_NAME --region us-east-1 --query "Stacks[].Outputs[?OutputKey=='Bucket'].OutputValue" --output text)
-      - pandoc-2.14.0.1/bin/pandoc --section-divs -s resume/resume.md -H resume/header.html -c resume/resume.css -o resume/resume.html
+      - pandoc-2.14.0.1/bin/pandoc --section-divs -s resume/resume.md -H resume/header.html -H resume/styles.html -o resume/resume.html
       - mkdir html/pdf
-      - node_modules/.bin/phantomjs bin/rasterize.js resume/resume.html html/pdf/resume.pdf 0.7
+      - node_modules/.bin/phantomjs bin/rasterize.js resume/resume.html html/pdf/resume.pdf 0.6
       - aws s3 sync html/ s3://${BUCKET}/
   post_build:
     commands:
       ##########
       ## Invalidate cache
       ##########
-      # - CLOUDFRONT_DISTRIBUTION_ID=$(aws cloudformation describe-stacks --stack-name $STACK_NAME --region us-east-1 --query "Stacks[].Outputs[?OutputKey=='CloudfrontDistributionId'].OutputValue" --output text)
-      # - INVALIDATION_ID=$(aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths /index.html /script.js --query "Invalidation.Id" --output text)
-      # - aws cloudfront wait invalidation-completed --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --id $INVALIDATION_ID
+      - CLOUDFRONT_DISTRIBUTION_ID=$(aws cloudformation describe-stacks --stack-name $STACK_NAME --region us-east-1 --query "Stacks[].Outputs[?OutputKey=='CloudfrontDistributionId'].OutputValue" --output text)
+      - INVALIDATION_ID=$(aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths /index.html /pdf/resume.pdf --query "Invalidation.Id" --output text)
+      - aws cloudfront wait invalidation-completed --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --id $INVALIDATION_ID

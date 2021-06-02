@@ -4,12 +4,12 @@ author: "Clayton Davis"
 date: 2020-06-01
 ---
 
-# Your Name
+# Clayton Davis
 
 ## Contact {.heading .hide}
 
 Milwaukee, WI\
-clayton@claytondavis.dev\
+clayton@claytondavis.dev
 
 ## Experience {.divider}
 
@@ -53,30 +53,32 @@ clayton@claytondavis.dev\
 
 ## Education {.divider}
 
-### B.Sc Computer and Information Technology (Network Engineering) &mdash; Purdue University
+- B.Sc Computer and Information Technology (Network Engineering) &mdash; Purdue University
 
 ## Technical skills {.divider}
 
-### Your Skills 1 {.col .left}
+### {.clear}
+
+### {.col .left}
 
 Networking\
 Security\
 SQL\
 Database Design\
-Web Development\
+Web Development
 
-### Your Skills 2 {.col .center}
+### {.col .center}
 
 Scripting\
 CICD\
 Cloud Native\
 Azure\
-Architecture\
+Architecture
 
-### Your Skills 3 {.col .right}
+### {.col .right}
 
 Docker\
 Amazon Cloud\
 Automation\
 Terraform\
-Cloudformation\
+Cloudformation

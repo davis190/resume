@@ -1,4 +1,4 @@
 # Automated Resume
 
 ## PDF Generation
-Based on : https://github.com/sujinleeme/resume-generator
+Inspired by from https://github.com/sujinleeme/resume-generator
