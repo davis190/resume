@@ -18,8 +18,8 @@ https://resume.claytondavis.dev\
 
 #### May 2021 - Present
 
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit
-- Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+- Deliver projects to customers using up to date technologies
+- Build a team and a culture for the new professional services organization
 
 ### Lead Solutions Architect &mdash; Onica
 
