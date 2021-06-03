@@ -89,7 +89,10 @@ p {
 ul {
   margin: 0;
   padding: 0;
-  list-style: none;
+  /* list-style: none; */
+  list-style-type: circle;
+  margin-left: 25px;
+  margin-top: 15px
 }
 
 /*------------------
@@ -234,7 +237,10 @@ button:focus,
 }
 
 .img-responsive {
-  width: 80%;
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*---------------------------
