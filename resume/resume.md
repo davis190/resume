@@ -25,7 +25,7 @@ https://resume.claytondavis.dev\
 
 #### Aug 2016 - May 2021
 
-- Migrate customers to the cloud using a cloud native approach
+- Migrate customers to the cloud following an agile methodology
 - Communicate effectively with customers to determine scope and meet timelines
 - Develop cloud native solutions for customers as they migrate legacy applications to the cloud
 - Lead a team of engineers and ensure alignment with customer deliverables every sprint
@@ -41,18 +41,21 @@ https://resume.claytondavis.dev\
 
 ## Certifications {.divider}
 
-- Amazon Certified Solutions Architect – Professional
-- Amazon Certified DevOps – Professional
-- Amazon Certified SysOps – Associate
-- Amazon Certified Developer Associate
-- Amazon Certified Solutions Architect – Associate
-- VMware Certified Professional 5 (VCP5) – December 2013
-- Cisco Certified Networking Associate (CCNA) – September 2013
-- Microsoft Certified Professional - Windows Server Administration Fundamentals
-- Microsoft Certified Professional - Security Fundamentals
-- Microsoft Certified Professional - Networking Fundamental
+- AWS Certified Security - Specialty
+- AWS Certified Solutions Architect – Professional
+- AWS Certified DevOps – Professional
+- AWS Certified SysOps – Associate
+- AWS Certified Developer Associate
+- AWS Certified Solutions Architect – Associate
+- Microsoft Certified: Azure Fundamentals
+- VMware Certified Professional 5 (VCP5) – Expired
+- Cisco Certified Networking Associate (CCNA) – Expired
 
 ## Education {.divider}
+
+### Graduate Certificate in Business Management
+
+#### Indiana University
 
 ### B.Sc Computer and Information Technology - Network Engineering 
 
