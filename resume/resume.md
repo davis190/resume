@@ -14,11 +14,12 @@ https://resume.claytondavis.dev\
 
 ## Experience {.divider}
 
-### Principal of Cloud Migrations and Modernization &mdash; Caylent
+### Delivery Manager -  Cloud Migrations and Modernization &mdash; Caylent
 
 #### May 2021 - Present
 
-- Deliver projects to customers using up to date technologies
+- Manage a team of architects and engineers to deliver customer projects
+- Architect modern solutions for customers using the latest AWS tools
 - Build a team and a culture for the new professional services organization
 
 ### Lead Solutions Architect &mdash; Onica
