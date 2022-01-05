@@ -14,7 +14,7 @@ https://resume.claytondavis.dev\
 
 ## Experience {.divider}
 
-### Delivery Manager -  Cloud Migrations and Modernization &mdash; Caylent
+### Technical Delivery Manager -  Cloud Migrations and Modernization &mdash; Caylent
 
 #### May 2021 - Present
 
@@ -79,13 +79,13 @@ Web Development
 Scripting\
 CICD\
 Cloud Native\
-Azure\
+AWS CDK\
 Architecture
 
 ### {.col .right}
 
 Docker\
-Amazon Cloud\
+AWS\
 Automation\
 Terraform\
 Cloudformation
