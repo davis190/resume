@@ -14,13 +14,14 @@ https://resume.claytondavis.dev\
 
 ## Experience {.divider}
 
-### Technical Delivery Manager -  Cloud Migrations and Modernization &mdash; Caylent
+### Director -  Cloud Native Application &mdash; Caylent
 
 #### May 2021 - Present
 
-- Manage a team of architects and engineers to deliver customer projects
-- Architect modern solutions for customers using the latest AWS tools
-- Build a team and a culture for the new professional services organization
+- Manage a team of technical delivery managers
+- Act as the escalation point for projects for my team and within the Cloud Native Application practice
+- Recruit top talent for the Cloud Native Application practice
+- Aid the sales team in selling Cloud Native Application projects and pods
 
 ### Lead Solutions Architect &mdash; Onica
 
