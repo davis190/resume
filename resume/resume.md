@@ -14,11 +14,12 @@ https://resume.claytondavis.dev\
 
 ## Experience {.divider}
 
-### Director -  Cloud Native Application &mdash; Caylent
+### Sr Director & Practice Leader -  Cloud Native Application &mdash; Caylent
 
 #### May 2021 - Present
 
-- Manage a team of technical delivery managers
+- Up level the team on AI-powered delivery in order to deliver more to customer faster
+- Manage a practice of over 140 people to staff and deliver successful client outcomes on projects
 - Act as the escalation point for projects for my team and within the Cloud Native Application practice
 - Recruit top talent for the Cloud Native Application practice
 - Aid the sales team in selling Cloud Native Application projects and pods
