@@ -14,7 +14,7 @@ https://resume.claytondavis.dev\
 
 ## Experience {.divider}
 
-### Sr Director & Practice Leader -  Cloud Native Application &mdash; Caylent
+### Senior Practice Leader of Software and AI-Powered Development &mdash; Caylent
 
 #### May 2021 - Present
 
